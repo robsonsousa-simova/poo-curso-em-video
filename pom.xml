@@ -7,6 +7,17 @@
     <groupId>br.com.simova</groupId>
     <artifactId>poo-curso-em-video</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <developers>
+        <developer>
+            <name>Robson Sousa</name>
+            <email>robson.sousa@simova.com.br</email>
+            <organization>SIMOVA</organization>
+            <organizationUrl>https://www.simova.com.br</organizationUrl>
+            <roles>
+                <role>Estagiário</role>
+            </roles>
+        </developer>
+    </developers>
 
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
