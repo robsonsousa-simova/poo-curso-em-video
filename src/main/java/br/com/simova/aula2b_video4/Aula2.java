@@ -1,5 +1,7 @@
 package br.com.simova.aula2b_video4;
 
+import java.util.Date;
+
 public class Aula2 {
 
     public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class Aula2 {
 
         System.out.println("\n");
 
-        Caneta c3= new Caneta();
+        Caneta c3 = new Caneta();
         c3.modelo = "Bic 03";
         c3.cor = "Vermelha";
         c3.ponta = 1.5f;
@@ -39,5 +41,10 @@ public class Aula2 {
         c3.status();
 
         System.out.println("\n");
+
+        DesafioAula2b desafioAula2b = new DesafioAula2b("Desafio Aula 2 b", "Robson", new Date(), true);
+        desafioAula2b.setCanetaUtilizada(c3);
+
+        System.err.println(desafioAula2b);
     }
 }

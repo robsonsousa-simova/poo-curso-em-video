@@ -8,6 +8,10 @@ public class Caneta {
     int carga;
     boolean tampada;
 
+    public String getModelo() {
+        return modelo;
+    }
+
     void status() {
         System.out.println("Modelo da caneta: " + this.modelo);
         System.out.println("Cor da caneta: " + this.cor);
@@ -16,9 +20,9 @@ public class Caneta {
     }
 
     void rabiscar() {
-        if (this.tampada == true){
+        if (this.tampada == true) {
             System.out.println("Erro. Não posso rabiscar com a caneta tampada.");
-        }else {
+        } else {
             System.out.println("Estou rabiscando.");
         }
     }
