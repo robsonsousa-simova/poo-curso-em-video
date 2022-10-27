@@ -1,12 +1,12 @@
-package br.com.simova.aula2b_video4;
+package br.com.simova.aula3b_video7;
 
 public class Caneta {
 
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    public String modelo;
+    public String cor;
+    private float ponta;
+    protected int carga;
+    private boolean tampada;
 
     public String getModelo() {
         return modelo;
@@ -22,7 +22,7 @@ public class Caneta {
 
     }
 
-    void rabiscar() {
+    public void rabiscar() {
         if (this.tampada == true) {
             System.out.println("Erro. Não posso rabiscar com a caneta tampada.");
         } else {
@@ -30,11 +30,11 @@ public class Caneta {
         }
     }
 
-    void tampar() {
+    public void tampar() {
         this.tampada = true;
     }
 
-    void destampar() {
+    public void destampar() {
         this.tampada = false;
     }
 }

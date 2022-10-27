@@ -12,6 +12,7 @@ public class Aula2 {
         c1.modelo = "Bic 01";
         c1.cor = "Azul";
         c1.ponta = 0.5f;
+        c1.carga = 80;
         c1.tampar();
         c1.rabiscar();
         c1.status();
@@ -22,6 +23,7 @@ public class Aula2 {
         c2.modelo = "Bic 02";
         c2.cor = "Preta";
         c2.ponta = 0.5f;
+        c2.carga = 80;
         c2.destampar();
         c2.rabiscar();
 
@@ -33,6 +35,7 @@ public class Aula2 {
         c3.modelo = "Bic 03";
         c3.cor = "Vermelha";
         c3.ponta = 1.5f;
+        c3.carga = 80;
         c3.tampar();
         c3.rabiscar();
         c3.destampar();
