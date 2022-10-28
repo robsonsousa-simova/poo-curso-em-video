@@ -58,7 +58,7 @@ public class DesafioAula3b {
                 "Desafio: " + getNomeDesafio()
                         + "\nNome: " + getDesafiante()
                         + "\nData desafio: " + getDataDoDesafio()
-                        + "\nDesafio concluído: " + isDesafioComplete
+                        + "\nDesafio concluído: " + isDesafioComplete()
                         + "\nModelo caneta utilizada: " + getCanetaUtilizada().getModelo();
     }
 }
