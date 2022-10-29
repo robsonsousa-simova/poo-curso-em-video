@@ -90,53 +90,42 @@ public class ContaBanco {
 
     public void depositar(double valor) {
 
-        if (valor < 0.0) {
-            // this.setSaldo(saldo);
-            System.out.println(getDono() + " não é possível depositar um valor menor que zero.");
-        } else if (valor == 0.0) {
-            // this.setSaldo(saldo);
-            System.out.println(getDono() + " não é possível depositar um valor igual a zero.");
+        if (status) {
+            if (valor < 0.0) {
+                this.setSaldo(saldo);
+                System.out.println(getDono() + " não é possível depositar um valor menor que zero.");
+            } else if (valor == 0.0) {
+                this.setSaldo(saldo);
+                System.out.println(getDono() + " não é possível depositar um valor igual a zero.");
+            } else {
+                System.out.println(getDono() + " fez um depósito no valor de R$ " + valor);
+                this.setSaldo(saldo + valor);
+            }
         } else {
-            System.out.println(getDono() + " fez um depósito no valor de R$ " + valor);
-            this.setSaldo(saldo + valor);
+            System.out.println(getDono() + " não é possível depositar, pois sua conta não está aberta.");
         }
     }
 
     public void sacar(double valor) {
 
-        if (valor > 0.0 && valor <= saldo) {
-            System.out.println(this.getDono() + " fez um saque no valor de R$ " + valor);
-            this.setSaldo(saldo - valor);
-        } else if (valor < 0.0) {
-            this.setSaldo(saldo);
-            System.out.println(getDono() + " não é possível sacar um valor menor que zero.");
-        } else if (valor == 0.0) {
-            this.setSaldo(saldo);
-            System.out.println(getDono() + " não é possível sacar um valor igual a zero.");
+        if (status) {
+            if (valor > 0.0 && valor <= saldo) {
+                System.out.println(this.getDono() + " fez um saque no valor de R$ " + valor);
+                this.setSaldo(saldo - valor);
+            } else if (valor < 0.0) {
+                this.setSaldo(saldo);
+                System.out.println(getDono() + " não é possível sacar um valor menor que zero.");
+            } else if (valor == 0.0) {
+                this.setSaldo(saldo);
+                System.out.println(getDono() + " não é possível sacar um valor igual a zero.");
+            } else {
+                this.setSaldo(saldo);
+                System.out.println(getDono() + " não é possível sacar um valor maior que o saldo.");
+            }
         } else {
-            this.setSaldo(saldo);
-            System.out.println(getDono() + " não é possível sacar um valor maior que o saldo.");
+            System.out.println(getDono() + " não é possível sacar, pois sua conta não está aberta.");
         }
     }
-
-// Outra forma de verificar condições do método sacar.
-//    public void sacar(double valor) {
-//
-//
-//        if (valor < 0.0) {
-//            // this.setSaldo(saldo);
-//            System.out.println(getDono() + " não é possível sacar um valor menor que zero.");
-//        } else if (valor == 0.0) {
-//            // this.setSaldo(saldo);
-//            System.out.println(getDono() + " não é possível sacar um valor igual a zero.");
-//        } else if (valor > saldo) {
-//            // this.setSaldo(saldo);
-//            System.out.println(getDono() + " não é possível sacar um valor maior que o saldo.");
-//        } else {
-//            System.out.println(this.getDono() + " fez um saque no valor de R$ " + valor);
-//            this.setSaldo(saldo - valor);
-//        }
-//    }
 
     public void pagarMensalidade() {
 

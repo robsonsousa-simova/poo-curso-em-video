@@ -37,7 +37,7 @@ public class Desafio5a {
 
         pularLinha();
 
-        // Na linha 41 o objeto c1 do tipo ContaBanco invoca o método exibirInformacoesConta
+        // Na linha 41 o objeto c2 do tipo ContaBanco invoca o método exibirInformacoesConta
         c2.exibirInformacoesConta();
 
         pularLinha();
@@ -70,10 +70,12 @@ public class Desafio5a {
         // Nas linhas 71 e 72 as instâncias c1 e c3 invocam o método fecharConta
         c1.fecharConta();
         c3.fecharConta();
+        c3.sacar(10);
+        c3.depositar(20);
 
     }
 
-    // método estático para apenas para exibir uma linha em branco entre cada linha de output
+    // método estático para exibir uma linha em branco entre cada linha de output
     // Obs.: métodos estáticos pertencem a classe e não as instâncias dessa classe.
     public static void pularLinha() {
 
