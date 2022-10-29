@@ -114,29 +114,33 @@ public class ContaBanco {
                 this.setSaldo(saldo - valor);
             } else if (valor < 0.0) {
                 this.setSaldo(saldo);
-                System.out.println(getDono() + " não é possível sacar um valor menor que zero.");
+                System.out.println(getDono() + ", não é possível sacar um valor menor que zero.");
             } else if (valor == 0.0) {
                 this.setSaldo(saldo);
-                System.out.println(getDono() + " não é possível sacar um valor igual a zero.");
+                System.out.println(getDono() + ", não é possível sacar um valor igual a zero.");
             } else {
                 this.setSaldo(saldo);
-                System.out.println(getDono() + " não é possível sacar um valor maior que o saldo.");
+                System.out.println(getDono() + ", não é possível sacar um valor maior que o saldo.");
             }
         } else {
-            System.out.println(getDono() + " não é possível sacar, pois sua conta não está aberta.");
+            System.out.println(getDono() + ", não é possível sacar, pois sua conta não está aberta.");
         }
     }
 
     public void pagarMensalidade() {
 
-        if (this.tipo.equals("CC")) {
-            setSaldo(saldo - 12);
-            System.out.println(getDono() + " pagou R$ 12,00 de mensalidade de conta.");
-        }
+        if (status){
+            if (this.tipo.equals("CC")) {
+                setSaldo(saldo - 12);
+                System.out.println(getDono() + " pagou R$ 12,00 de mensalidade de conta.");
+            }
 
-        if (this.tipo.equals("CP")) {
-            setSaldo(saldo - 20);
-            System.out.println(getDono() + " pagou R$ 20,00 de mensalidade de conta.");
+            if (this.tipo.equals("CP")) {
+                setSaldo(saldo - 20);
+                System.out.println(getDono() + " pagou R$ 20,00 de mensalidade de conta.");
+            }
+        }else {
+            System.out.println(getDono() + ", sua conta não está aberta. Logo não é possível pagar mensalidade.");
         }
     }
 

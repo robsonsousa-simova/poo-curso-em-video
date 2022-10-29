@@ -72,7 +72,9 @@ public class Desafio5a {
         c3.fecharConta();
         c3.sacar(10);
         c3.depositar(20);
-
+        c3.pagarMensalidade();
+        c3.exibirTipoAndSaldoConta();
+        c3.exibirInformacoesConta();
     }
 
     // método estático para exibir uma linha em branco entre cada linha de output
