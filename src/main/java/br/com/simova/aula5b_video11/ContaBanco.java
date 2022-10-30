@@ -83,14 +83,14 @@ public class ContaBanco {
         if (status) {
 
             if (this.saldo > 0) {
-                System.out.println(getDono() + " sua conta não pode ser fechada ainda, pois há saldo no valor de R$ " + getSaldo());
+                System.out.println(getDono() + " sua conta não pode ser fechada ainda, pois há um saldo positivo no valor de R$ " + getSaldo());
             }
 
             else if (this.saldo < 0) {
-                System.out.println(getDono() + " sua conta não pode ser fechada pois o saldo é negativo.");
+                System.out.println(getDono() + " sua conta não pode ser fechada pois há um saldo negativo de R$ " + getSaldo());
             }else {
                 this.status = false;
-                System.out.println("Conta de " + getDono() + " fechada com sucesso.");
+                System.out.println(getDono() + ", fechou sua conta com sucesso.");
             }
 
         } else {
@@ -103,9 +103,9 @@ public class ContaBanco {
 
         if (status) {
             this.saldo = saldo + valor;
-            System.out.println("Foi feito um depósito de R$ " + valor + " na conta de " + getDono());
+            System.out.println(getDono() + ", depositou R$ " + valor  + " em sua conta.");
         } else {
-            System.out.println("Não é possível depositar em uma conta fechada.");
+            System.out.println(getDono() + ", não é possível depositar em uma conta fechada.");
         }
     }
 
@@ -116,10 +116,10 @@ public class ContaBanco {
                 this.saldo = saldo - valor;
                 System.out.println(getDono() + ", sacou R$ " + valor + " de sua conta.");
             } else {
-                System.out.println("Saldo insuficiente  para saque.");
+                System.out.println(getDono() + ", saldo insuficiente  para saque.");
             }
         } else {
-            System.out.println("Não é possível sacar de uma conta fechada.");
+            System.out.println(getDono() + ", não é possível sacar, pois sua conta está fechada.");
         }
     }
 
@@ -134,9 +134,9 @@ public class ContaBanco {
 
         if (status) {
             this.saldo = (saldo - valor);
-            System.out.println("Mensalidade paga com sucesso por " + getDono());
+            System.out.println(getDono() + " pagou a mensalidade de R$ " + valor + " com sucesso.");
         } else {
-            System.out.println("Não é possível pagar uma conta que está fechada.");
+            System.out.println(getDono() + ", não é possível pagar a mensalidade de uma conta que está fechada.");
         }
     }
 }

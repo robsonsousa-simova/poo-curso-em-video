@@ -11,12 +11,18 @@ public class Aula5b {
         c1.abrirConta("CC");
 
         c1.fecharConta();
-
+        c1.sacar(60);
         c1.depositar(10);
         c1.sacar(60);
+        c1.pagarMensal();
+        c1.fecharConta();
+
+        c1.depositar(12);
         c1.fecharConta();
 
         c1.estadoAtual();
+
+
 
 
         ContaBanco c2 = new ContaBanco();
@@ -33,7 +39,12 @@ public class Aula5b {
         c2.fecharConta();
 
         c2.sacar(250);
+        c2.pagarMensal();
         c2.fecharConta();
+        c2.depositar(20);
+        c2.fecharConta();
+
+        c2.estadoAtual();
 
         ContaBanco c3 = new ContaBanco();
         c3.setNumConta(3);
