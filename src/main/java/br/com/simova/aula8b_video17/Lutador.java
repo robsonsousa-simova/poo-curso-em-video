@@ -1,4 +1,4 @@
-package br.com.simova.aula8a_video16;
+package br.com.simova.aula8b_video17;
 
 public class Lutador {
 
