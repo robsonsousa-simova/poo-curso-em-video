@@ -39,4 +39,25 @@ public abstract class Pessoa {
 
         return "Nome: " + nome + "\tIdade: " + idade + "\tSexo: " + sexo;
     }
+
+    public String getClassName() {
+
+        return getClass().getSimpleName();
+    }
+
+    public String getSuperClassName() {
+
+        return getClass().getSuperclass().getSimpleName();
+    }
+
+    public String getPackageName() {
+
+        return getClass().getPackageName();
+    }
+
+    public void exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote() {
+
+        String classNameAndSuperClassNameAndPackageName = "Classe: " + getClassName() + " | Super Classe: " + getSuperClassName() + " | Pacote: " + getPackageName();
+        System.out.println(classNameAndSuperClassNameAndPackageName);
+    }
 }

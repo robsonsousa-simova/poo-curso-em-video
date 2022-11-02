@@ -13,6 +13,7 @@ public class Aula11b {
         v1.setIdade(22);
         v1.setSexo("Masculino");
         System.out.println(v1);
+        v1.exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote();
 
         imprimirLinhaPontilhada();
 
@@ -25,6 +26,7 @@ public class Aula11b {
         a1.fazerAniversario();
         System.out.println(a1);
         a1.pagarMensalidade();
+        a1.exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote();
 
         imprimirLinhaPontilhada();
 
@@ -37,6 +39,7 @@ public class Aula11b {
         b1.setBolsa(12.5f);
         System.out.println(b1);
         b1.pagarMensalidade();
+        b1.exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote();
 
         imprimirLinhaPontilhada();
 
@@ -49,6 +52,7 @@ public class Aula11b {
         t1.setRegistroProfissional("Programador");
         System.out.println(t1);
         t1.registrar();
+        t1.exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote();
 
         imprimirLinhaPontilhada();
 
@@ -61,6 +65,7 @@ public class Aula11b {
         p1.fazerAniversario();
         System.out.println(p1);
         p1.receberSalario();
+        p1.exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote();
 
         imprimirLinhaPontilhada();
 
