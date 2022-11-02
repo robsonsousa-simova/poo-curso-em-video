@@ -7,6 +7,8 @@ public class Aula11b {
         // Objeto p1 do tipo Classe Pessoa não pode ser instanciada, pois Pessoa é uma classe abstrata.
         // Em outras palavras: Classe Abstrata não pode ser instanciada.
         // Pessoa p1 = new Pessoa();
+        Pessoa.exibirHierarquiaDeUmaClasseConcreta();
+        imprimirLinhaPontilhada();
 
         Visitante v1 = new Visitante();
         v1.setNome("Juvenal");
@@ -14,6 +16,9 @@ public class Aula11b {
         v1.setSexo("Masculino");
         System.out.println(v1);
         v1.exibirNomeDaClasseAndNomeDaSuperClasseAndNomeDoPacote();
+        v1.exibirHierarquiaEntreClasses();
+        v1.exibirEspecializacaoDeClasse();
+        v1.exibirGeneralizacaoDeClasse();
 
         imprimirLinhaPontilhada();
 

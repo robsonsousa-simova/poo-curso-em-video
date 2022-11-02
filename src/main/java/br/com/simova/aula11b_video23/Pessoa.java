@@ -60,4 +60,28 @@ public abstract class Pessoa {
         String classNameAndSuperClassNameAndPackageName = "Classe: " + getClassName() + " | Super Classe: " + getSuperClassName() + " | Pacote: " + getPackageName();
         System.out.println(classNameAndSuperClassNameAndPackageName);
     }
+
+    public void exibirHierarquiaEntreClasses() {
+
+        String hierarquia = "A classe " + getClassName() + " é filha da classe " + getSuperClassName() + ".";
+        System.out.println(hierarquia);
+    }
+
+    public void exibirEspecializacaoDeClasse() {
+
+        String classeEspecializada = "A classe " + getClassName() + " é uma Especialização de " + getSuperClassName() + ".";
+        System.out.println(classeEspecializada);
+    }
+
+    public void exibirGeneralizacaoDeClasse() {
+
+        String classeGeneralizada = "A classe " + getSuperClassName() + " é uma Generalização da classe " + getClassName() + ".";
+        System.out.println(classeGeneralizada);
+    }
+
+    public static void exibirHierarquiaDeUmaClasseConcreta() {
+
+        String hierarquia = "A classe " + Pessoa.class.getSimpleName() + " é filha da classe " + Pessoa.class.getSuperclass().getSimpleName() + ".";
+        System.err.println(hierarquia);
+    }
 }
