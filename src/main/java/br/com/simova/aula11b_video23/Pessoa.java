@@ -2,7 +2,7 @@ package br.com.simova.aula11b_video23;
 
 public abstract class Pessoa {
 
-    protected String nome;
+    private String nome;
     private int idade;
     private String sexo;
 

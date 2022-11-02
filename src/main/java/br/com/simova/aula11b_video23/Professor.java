@@ -22,7 +22,7 @@ public class Professor extends Pessoa {
     }
 
     public void receberSalario() {
-        System.out.println("O Professor " + nome + " recebeu R$ " + salario + " de salário.");
+        System.out.println("O Professor " + getNome() + " recebeu R$ " + salario + " de salário.");
     }
 
     @Override

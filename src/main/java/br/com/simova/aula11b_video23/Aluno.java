@@ -22,7 +22,7 @@ public class Aluno extends Pessoa {
     }
 
     public void pagarMensalidade() {
-        System.out.println("Pagando mensalidade de aluno " + this.nome);
+        System.out.println("Pagando mensalidade de aluno " + getNome());
     }
 
     @Override

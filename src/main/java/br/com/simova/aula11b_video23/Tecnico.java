@@ -14,7 +14,7 @@ public class Tecnico extends Aluno {
 
     public void registrar() {
 
-        System.out.println("O aluno " + nome + " possuio o seguinte Registro Profissional: " + registroProfissional);
+        System.out.println("O aluno " + getNome() + " possuio o seguinte Registro Profissional: " + registroProfissional);
     }
 
     @Override

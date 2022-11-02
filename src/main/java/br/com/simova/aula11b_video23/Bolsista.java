@@ -13,13 +13,13 @@ public class Bolsista extends Aluno {
     }
 
     public void renovarBolsa() {
-        System.out.println("Renovando bolsa de " + this.nome);
+        System.out.println("Renovando bolsa de " + getNome());
     }
 
     @Override
     public void pagarMensalidade() {
 
-        System.out.println(this.nome + " é bolsita. Pagamento facilitado.");
+        System.out.println(getNome() + " é bolsita. Pagamento facilitado.");
     }
 
     @Override
