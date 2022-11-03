@@ -36,7 +36,7 @@ public class Pergunta {
 
     @Override
     public String toString() {
-        return "Pergunta: " + getNumero() + "\nEnunciado: " + getEnunciado();
+        return "Pergunta: " + getNumero() + "\tEnunciado: " + getEnunciado();
     }
 
     public void exibirPergunta(){

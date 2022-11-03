@@ -45,4 +45,16 @@ public class Resposta {
     public void setPergunta(Pergunta pergunta) {
         this.pergunta = pergunta;
     }
+
+    @Override
+    public String toString() {
+        return "Resposta Número: " + getNumeroResposta() + "\t" + getResposta();
+    }
+
+    public void exibirResposta() {
+
+        String resposta = toString();
+
+        System.out.println(resposta);
+    }
 }
