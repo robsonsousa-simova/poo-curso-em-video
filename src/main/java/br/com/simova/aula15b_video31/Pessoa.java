@@ -1,4 +1,4 @@
-package br.com.simova.aula14b_video29;
+package br.com.simova.aula15b_video31;
 
 public abstract class Pessoa {
 
@@ -47,7 +47,7 @@ public abstract class Pessoa {
     }
 
     protected void ganharExperiencia() {
-
+        this.experiencia++;
     }
 
     @Override

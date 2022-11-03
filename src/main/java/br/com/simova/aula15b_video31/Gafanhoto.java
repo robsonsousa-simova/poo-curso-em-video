@@ -1,4 +1,4 @@
-package br.com.simova.aula14b_video29;
+package br.com.simova.aula15b_video31;
 
 public class Gafanhoto extends Pessoa{
 
@@ -29,6 +29,24 @@ public class Gafanhoto extends Pessoa{
 
     public void assistirMaisUmVideo(){
 
+        this.totalAssistido++;
+    }
 
+    @Override
+    public String toString() {
+        return "Login: " + login + "\t|\tTotal Assistido: " + totalAssistido
+                + "\t|\tNome: " + nome
+                + "\t|\tIdade: " + idade
+                + "\t|\tSexo: " + sexo
+                + "\t|\tExperiencia: " + experiencia;
+    }
+
+
+
+    public void exibirGafanhoto(){
+
+        String gafanhoto = toString();
+
+        System.out.println(gafanhoto);
     }
 }
