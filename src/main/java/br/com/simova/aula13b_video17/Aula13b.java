@@ -4,6 +4,8 @@ public class Aula13b {
 
     public static void main(String[] args) {
 
+        Animal.exibirInformacoes();
+
         Mamifero m1 = new Mamifero();
         m1.emitirSom();
 

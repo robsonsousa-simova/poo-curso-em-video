@@ -32,4 +32,8 @@ public abstract class Animal {
 
     public abstract void emitirSom();
 
+    public static void exibirInformacoes(){
+
+        System.err.println("Sou um método estático de uma classe abstrata que não pode ser instanciada. Mas ainda posso ser chamado.");
+    }
 }
